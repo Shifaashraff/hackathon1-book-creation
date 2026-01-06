@@ -1,0 +1,8 @@
+# Action to execute a cognitive plan
+CognitivePlan plan          # The cognitive plan to execute
+
+---
+TaskExecutionState result   # The final execution state
+
+---
+TaskExecutionState feedback # Updates on execution progress

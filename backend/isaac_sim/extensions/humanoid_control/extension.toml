@@ -1,0 +1,23 @@
+[package]
+version = "1.0.0"
+category = "isaac_sim"
+description = "Humanoid Robot Joint Control Extension for Isaac Sim"
+
+[extension]
+name = "omni.isaac.humanoid_control"
+title = "Humanoid Robot Control"
+type = "python"
+subtype = "extension"
+
+[[python.module]]
+name = "omni.isaac.humanoid_control"
+
+[dependencies]
+"omni.isaac.core" = {}
+"omni.isaac.universal_robots" = {}
+"omni.kit.ui_app" = {}
+"omni.kit.menu.utils" = {}
+"omni.physx" = {}
+
+[settings]
+"exts.omni.isaac.humanoid_control.enabled_on_startup" = true

@@ -1,0 +1,58 @@
+# Isaac Sim Configuration for Humanoid Robot
+
+# Physics parameters for realistic humanoid simulation
+physics:
+  gravity: -9.81
+  solver:
+    type: "TGS"  # Use TGS solver for better stability with humanoid joints
+    iterations: 32  # Higher iterations for stability
+    velocity_iterations: 16
+    position_iterations: 8
+  enable_ccd: true  # Enable continuous collision detection for fast-moving parts
+  ccd_threshold: 1.0e-7
+  gpu_max_rigid_contact_count: 524288
+  gpu_max_rigid_patch_count: 32768
+  gpu_heap_capacity: 67108864
+  gpu_collision_stack_size: 67108864
+
+# Rendering parameters for photorealistic output
+rendering:
+  resolution:
+    width: 1920
+    height: 1080
+  quality: "Production"  # High quality for photorealistic rendering
+  lighting:
+    intensity: 1500.0  # Higher intensity for photorealistic scenes
+    exposure: 1.0
+    fstop: 2.8  # Realistic camera aperture setting
+  denoise:
+    enable: true  # Enable denoising for clean photorealistic output
+    type: "optix"  # Use OptiX denoising
+
+# Simulation parameters optimized for humanoid
+simulation:
+  time_step: 1.0e-3  # 1ms time step for accuracy
+  sub_steps: 2  # Multiple substeps for stability
+  max_depenetration_velocity: 5.0  # Limit for humanoid joint stability
+  enable_scene_query_support: true
+  enable_gpu_dynamics: true  # Use GPU for dynamics calculations
+  gpu_max_particles: 100000
+  gpu_max_diffuse_particles: 100000
+
+# USD stage settings
+stage:
+  up_axis: "Y"  # Y-up coordinate system
+  meters_per_unit: 1.0  # 1 meter per unit for realistic scaling
+
+# Humanoid-specific physics settings
+humanoid_physics:
+  joint_damping: 0.1  # Damping for stable humanoid joints
+  joint_friction: 0.01  # Low friction for smooth movement
+  contact_material:
+    static_friction: 0.5
+    dynamic_friction: 0.5
+    restitution: 0.1  # Low restitution for realistic interactions
+  ground_contact:
+    stiffness: 1000000.0  # High stiffness for stable contact
+    damping: 100000.0
+    compliance: 1.0e-6

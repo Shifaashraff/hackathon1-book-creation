@@ -1,0 +1,120 @@
+# Unity-ROS Bridge Contract: Digital Twin Curriculum
+
+## ROS Bridge Messages
+
+### rosbridge_msgs/Topics
+- **Description**: Request available ROS topics
+- **Request**: {}
+- **Response**:
+  - op: string (should be "topics")
+  - topics: string[] (list of available topics)
+  - types: string[] (corresponding types for each topic)
+
+### rosbridge_msgs/Services
+- **Description**: Request available ROS services
+- **Request**: {}
+- **Response**:
+  - op: string (should be "services")
+  - services: string[] (list of available services)
+  - types: string[] (corresponding types for each service)
+
+### rosbridge_msgs/Advertise
+- **Description**: Advertise a topic for publishing
+- **Request**:
+  - op: string (should be "advertise")
+  - topic: string (topic name)
+  - type: string (message type)
+  - latch: boolean (optional, whether to latch the topic)
+
+### rosbridge_msgs/Unadvertise
+- **Description**: Unadvertise a topic
+- **Request**:
+  - op: string (should be "unadvertise")
+  - topic: string (topic name)
+
+### rosbridge_msgs/Publish
+- **Description**: Publish a message to a topic
+- **Request**:
+  - op: string (should be "publish")
+  - topic: string (topic name)
+  - msg: object (message content)
+
+### rosbridge_msgs/Subscribe
+- **Description**: Subscribe to a topic
+- **Request**:
+  - op: string (should be "subscribe")
+  - topic: string (topic name)
+  - type: string (message type)
+  - queue_length: integer (optional, subscription queue length)
+
+### rosbridge_msgs/Unsubscribe
+- **Description**: Unsubscribe from a topic
+- **Request**:
+  - op: string (should be "unsubscribe")
+  - topic: string (topic name)
+
+## Specific Topic Contracts for Digital Twin
+
+### Joint States Synchronization
+- **Topic**: /joint_states
+- **Type**: sensor_msgs/JointState
+- **Purpose**: Synchronize robot joint positions from Gazebo to Unity
+- **Unity Update Rate**: 30 Hz minimum for smooth visualization
+- **Message Frequency**: Should match Gazebo simulation rate
+
+### Camera Image Synchronization
+- **Topic**: /camera/image_raw
+- **Type**: sensor_msgs/Image
+- **Purpose**: Send camera images from Gazebo to Unity for visualization
+- **Unity Processing**: Convert ROS image format to Unity texture
+- **Compression**: Consider compressed image transport for performance
+
+### TF Transform Synchronization
+- **Topic**: /tf
+- **Type**: tf2_msgs/TFMessage
+- **Purpose**: Synchronize coordinate transforms for proper visualization
+- **Unity Processing**: Convert TF transforms to Unity coordinate system
+- **Coordinate System**: Convert from ROS (right-handed) to Unity (left-handed)
+
+## Unity Component Interfaces
+
+### RobotVisualizationController
+- **Purpose**: Control the visualization of the robot model in Unity
+- **Methods**:
+  - UpdateJointPositions(jointStates: JointState[]): void
+  - UpdateRobotPose(position: Vector3, rotation: Quaternion): void
+  - SetRobotModel(modelPath: string): void
+
+### SensorDataVisualizer
+- **Purpose**: Visualize sensor data in the Unity environment
+- **Methods**:
+  - UpdateLidarVisualization(laserScan: LaserScan): void
+  - UpdateCameraFeed(imageData: Image): void
+  - UpdateImuVisualization(imuData: Imu): void
+
+### SimulationSynchronizer
+- **Purpose**: Manage synchronization between Gazebo and Unity
+- **Methods**:
+  - StartSynchronization(): void
+  - StopSynchronization(): void
+  - SetSynchronizationRate(rateHz: number): void
+  - IsSynchronized(): boolean
+
+## Coordinate System Conversion
+
+### ROS to Unity Conversion
+- **Position**: [x, y, z] → [x, z, -y] (swap y and z, negate new z)
+- **Rotation**: Convert quaternion from ROS frame to Unity frame
+- **Scale**: ROS units (meters) to Unity units (meters) - 1:1 ratio
+
+## Error Handling
+
+### Connection Errors
+- **Disconnected**: Handle gracefully and attempt reconnection
+- **Timeout**: Implement timeout for ROS bridge requests
+- **Rate Limiting**: Implement appropriate rate limiting to prevent flooding
+
+### Data Validation
+- **Joint Limits**: Validate joint positions are within physical limits
+- **Coordinate Bounds**: Validate positions are within reasonable bounds
+- **Message Integrity**: Verify message format and content validity

@@ -1,0 +1,133 @@
+# Isaac Sim Perception Plugin Configuration for Humanoid Robot
+
+# Camera sensor configuration for VSLAM
+camera:
+  # Left camera of stereo pair
+  left_camera:
+    type: "rgb"
+    position: [0.05, 0.05, 0.05]  # Position relative to head link
+    rotation: [0, 0, 0]  # Rotation in degrees (pitch, yaw, roll)
+    fov: 90  # Field of view in degrees
+    resolution:
+      width: 640
+      height: 480
+    clipping_range: [0.1, 100.0]  # Near and far clipping distances
+    enable_noise: true
+    noise_params:
+      type: "uniform"
+      range: [0.0, 0.01]  # Noise range in meters
+
+  # Right camera of stereo pair
+  right_camera:
+    type: "rgb"
+    position: [0.05, -0.05, 0.05]  # Position relative to head link
+    rotation: [0, 0, 0]  # Rotation in degrees (pitch, yaw, roll)
+    fov: 90  # Field of view in degrees
+    resolution:
+      width: 640
+      height: 480
+    clipping_range: [0.1, 100.0]  # Near and far clipping distances
+    baseline: 0.1  # Distance between left and right cameras in meters
+    enable_noise: true
+    noise_params:
+      type: "uniform"
+      range: [0.0, 0.01]  # Noise range in meters
+
+# Depth sensor configuration
+depth:
+  left_depth_camera:
+    type: "depth"
+    position: [0.05, 0.05, 0.05]  # Position relative to head link
+    rotation: [0, 0, 0]  # Rotation in degrees (pitch, yaw, roll)
+    fov: 90  # Field of view in degrees
+    resolution:
+      width: 640
+      height: 480
+    clipping_range: [0.1, 10.0]  # Near and far clipping distances
+    enable_noise: true
+    noise_params:
+      type: "gaussian"
+      mean: 0.0
+      std_dev: 0.01
+
+# IMU sensor configuration
+imu:
+  imu_sensor:
+    type: "imu"
+    position: [0, 0, 0.1]  # Position relative to torso link
+    rotation: [0, 0, 0]  # Rotation in degrees (pitch, yaw, roll)
+    linear_acceleration_noise:
+      mean: [0.0, 0.0, 0.0]
+      variance: [0.01, 0.01, 0.01]
+    angular_velocity_noise:
+      mean: [0.0, 0.0, 0.0]
+      variance: [0.001, 0.001, 0.001]
+    orientation_noise:
+      mean: [0.0, 0.0, 0.0]
+      variance: [0.001, 0.001, 0.001]
+
+# LIDAR sensor configuration
+lidar:
+  front_lidar:
+    type: "lidar"
+    position: [0.15, 0, 0.1]  # Position relative to base link
+    rotation: [0, 0, 0]  # Rotation in degrees (pitch, yaw, roll)
+    horizontal:
+      samples: 640
+      resolution: 1
+      min_range: 0.1
+      max_range: 25.0
+      fov: 360
+    vertical:
+      samples: 16
+      resolution: 1
+      min_range: 0.1
+      max_range: 25.0
+      fov: 30
+    enable_semantics: true
+
+# AprilTag detector configuration for VSLAM
+apriltag:
+  apriltag_detector:
+    type: "apriltag"
+    camera_name: "left_camera"  # Which camera to use for detection
+    tag_family: "36h11"
+    tag_size: 0.16  # Size of the tag in meters
+    max_hamming_dist: 3
+    decimate: 1.0
+    blur: 0.0
+    refine_edges: 1
+    decode_sharpening: 0.25
+    debug: 0
+
+# Segmentation sensor configuration
+segmentation:
+  segmentation_camera:
+    type: "segmentation"
+    position: [0.05, 0, 0.05]  # Position relative to head link
+    rotation: [0, 0, 0]  # Rotation in degrees (pitch, yaw, roll)
+    fov: 90  # Field of view in degrees
+    resolution:
+      width: 640
+      height: 480
+    clipping_range: [0.1, 10.0]  # Near and far clipping distances
+    class_map: "default"  # Which semantic class map to use
+
+# Visual SLAM configuration
+visual_slam:
+  stereo_vslam:
+    type: "stereo_visual_slam"
+    left_camera: "left_camera"
+    right_camera: "right_camera"
+    feature_detector: "sift"
+    descriptor_extractor: "sift"
+    matcher: "flann"
+    max_features: 1000
+    matching_threshold: 0.7
+    bundle_adjustment: true
+    keyframe_selection:
+      distance_threshold: 0.5  # Minimum distance between keyframes
+      angle_threshold: 0.5     # Minimum rotation between keyframes
+    map_point_size: 0.01       # Size of map points in meters
+    enable_loop_closure: true
+    enable_relocalization: true

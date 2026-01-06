@@ -1,0 +1,206 @@
+# Isaac Sim Humanoid Robot Control Configuration
+
+# Joint control parameters for humanoid robot
+joints:
+  # Hip joints (for bipedal locomotion)
+  left_hip:
+    controller:
+      type: "PID"
+      position_gain: 1000.0
+      velocity_gain: 100.0
+      max_force: 1000.0
+      max_velocity: 5.0
+    limits:
+      lower: -1.57
+      upper: 1.57
+      stiffness: 1000.0
+      damping: 100.0
+  right_hip:
+    controller:
+      type: "PID"
+      position_gain: 1000.0
+      velocity_gain: 100.0
+      max_force: 1000.0
+      max_velocity: 5.0
+    limits:
+      lower: -1.57
+      upper: 1.57
+      stiffness: 1000.0
+      damping: 100.0
+
+  # Knee joints
+  left_knee:
+    controller:
+      type: "PID"
+      position_gain: 1000.0
+      velocity_gain: 100.0
+      max_force: 1000.0
+      max_velocity: 5.0
+    limits:
+      lower: -1.57
+      upper: 0.0
+      stiffness: 1000.0
+      damping: 100.0
+  right_knee:
+    controller:
+      type: "PID"
+      position_gain: 1000.0
+      velocity_gain: 100.0
+      max_force: 1000.0
+      max_velocity: 5.0
+    limits:
+      lower: -1.57
+      upper: 0.0
+      stiffness: 1000.0
+      damping: 100.0
+
+  # Ankle joints (simplified as fixed for stability)
+  left_ankle:
+    controller:
+      type: "PID"
+      position_gain: 500.0
+      velocity_gain: 50.0
+      max_force: 500.0
+      max_velocity: 2.0
+    limits:
+      lower: -0.5
+      upper: 0.5
+      stiffness: 500.0
+      damping: 50.0
+  right_ankle:
+    controller:
+      type: "PID"
+      position_gain: 500.0
+      velocity_gain: 50.0
+      max_force: 500.0
+      max_velocity: 2.0
+    limits:
+      lower: -0.5
+      upper: 0.5
+      stiffness: 500.0
+      damping: 50.0
+
+  # Shoulder joints (for arm movement)
+  left_shoulder:
+    controller:
+      type: "PID"
+      position_gain: 500.0
+      velocity_gain: 50.0
+      max_force: 500.0
+      max_velocity: 3.0
+    limits:
+      lower: -1.57
+      upper: 1.57
+      stiffness: 500.0
+      damping: 50.0
+  right_shoulder:
+    controller:
+      type: "PID"
+      position_gain: 500.0
+      velocity_gain: 50.0
+      max_force: 500.0
+      max_velocity: 3.0
+    limits:
+      lower: -1.57
+      upper: 1.57
+      stiffness: 500.0
+      damping: 50.0
+
+  # Elbow joints
+  left_elbow:
+    controller:
+      type: "PID"
+      position_gain: 500.0
+      velocity_gain: 50.0
+      max_force: 500.0
+      max_velocity: 3.0
+    limits:
+      lower: -1.57
+      upper: 1.57
+      stiffness: 500.0
+      damping: 50.0
+  right_elbow:
+    controller:
+      type: "PID"
+      position_gain: 500.0
+      velocity_gain: 50.0
+      max_force: 500.0
+      max_velocity: 3.0
+    limits:
+      lower: -1.57
+      upper: 1.57
+      stiffness: 500.0
+      damping: 50.0
+
+# Bipedal locomotion control parameters
+bipedal_control:
+  # Walking gait parameters
+  gait:
+    step_height: 0.1  # Height of foot lift during walking
+    step_length: 0.3  # Length of each step
+    step_duration: 0.8  # Time for each step (seconds)
+    stance_duration: 0.4  # Time in stance phase
+    swing_duration: 0.4  # Time in swing phase
+    double_support_ratio: 0.2  # Ratio of double support phase
+
+  # Balance control parameters
+  balance:
+    com_height: 0.8  # Center of mass height (meters)
+    com_tolerance: 0.05  # Center of mass position tolerance
+    zmp_margin: 0.05  # Zero moment point safety margin
+    hip_sway_gain: 0.1  # Hip sway for balance
+    ankle_roll_gain: 0.2  # Ankle roll for lateral balance
+
+  # Stability control
+  stability:
+    max_tilt_angle: 15.0  # Maximum tilt before corrective action (degrees)
+    recovery_gain: 2.0  # Gain for stability recovery
+    ankle_stiffness: 500.0  # Ankle joint stiffness for balance
+
+# Control modes
+control_modes:
+  # Joint position control
+  position_control:
+    default_kp: 1000.0  # Default proportional gain
+    default_kd: 100.0   # Default derivative gain
+    default_max_effort: 1000.0
+
+  # Velocity control
+  velocity_control:
+    default_kp: 100.0
+    default_kd: 10.0
+    default_max_effort: 500.0
+
+  # Force control
+  force_control:
+    default_kp: 10.0
+    default_kd: 1.0
+    default_max_effort: 200.0
+
+# Trajectory execution parameters
+trajectory_execution:
+  max_velocity_scaling_factor: 1.0
+  max_acceleration_scaling_factor: 1.0
+  goal_time_tolerance: 1.0
+  allowed_start_tolerance: 0.01
+
+# Safety limits
+safety_limits:
+  max_joint_velocity: 10.0
+  max_joint_torque: 2000.0
+  collision_check_distance: 0.05
+  emergency_stop_threshold: 1000.0  # Force threshold to trigger emergency stop
+
+# Humanoid-specific control parameters
+humanoid_specific:
+  # Parameters for human-like movement
+  natural_movement:
+    joint_spring_coefficient: 100.0
+    joint_damper_coefficient: 10.0
+    muscle_like_actuation: true
+
+  # Walking pattern generation
+  walk_pattern:
+    hip_offset: 0.05  # Lateral hip offset for natural walking
+    arm_swing_ratio: 0.5  # Arm swing coordination with leg movement
+    torso_stiffness: 500.0  # Torso stability during walking

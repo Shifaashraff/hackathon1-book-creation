@@ -1,0 +1,10 @@
+# Request
+string session_id  # Session ID of the perception process to stop
+string sensor_type  # Type of perception to stop
+
+---
+# Response
+bool success
+string message
+bool was_running
+float32 processing_time_ms

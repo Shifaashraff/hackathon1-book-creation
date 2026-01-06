@@ -1,0 +1,14 @@
+# Request
+string sensor_type  # Type of perception to start (vslam, detection, segmentation, etc.)
+bool enable_rgb
+bool enable_depth
+bool enable_segmentation
+bool enable_detection
+float32 processing_frequency  # Processing frequency in Hz
+
+---
+# Response
+bool success
+string message
+string session_id
+int32 process_id

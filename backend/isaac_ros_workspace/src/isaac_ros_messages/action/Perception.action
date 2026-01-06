@@ -1,0 +1,26 @@
+# Goal definition
+string sensor_type
+bool enable_rgb
+bool enable_depth
+bool enable_segmentation
+bool enable_detection
+float32 processing_frequency
+string target_object_class  # Optional: specific object class to detect
+
+---
+# Result definition
+bool success
+string message
+int32 processed_frames
+float32 average_processing_time_ms
+isaac_ros_messages/msg/PerceptionData final_perception_data
+
+---
+# Feedback definition
+int32 processed_frames
+float32 current_processing_time_ms
+float32 average_processing_time_ms
+bool is_processing
+string current_status
+int32 detection_count
+float32 confidence_average

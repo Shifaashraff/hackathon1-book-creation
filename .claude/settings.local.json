@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -ExecutionPolicy Bypass -File \".specify/scripts/powershell/update-agent-context.ps1\" -AgentType claude)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \".specify/scripts/powershell/check-prerequisites.ps1\" -Json)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \".specify/scripts/powershell/check-prerequisites.ps1\" -Json -RequireTasks -IncludeTasks)",
+      "Bash(mkdir -p docusaurus/src)",
+      "Bash(python isaac_sim/scripts/test_photorealistic_rendering.py)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \".specify/scripts/powershell/create-new-feature.ps1\" -Json -Number 1 -ShortName \"vla-module\" -Description \"Module 4 – Vision-Language-Action \\(VLA\\)\n\nTarget audience: Students with ROS 2, simulation, and AI perception experience\n\nFocus: Voice-command-based autonomous humanoid actions\n\nChapters:\n\nVoice-to-Action: OpenAI Whisper for voice commands\n\nCognitive Planning: Convert commands to ROS 2 actions\n\nCapstone Project: Humanoid executes tasks autonomously\")",
+      "Bash(.specify/scripts/powershell/setup-plan.ps1 -Json)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \".specify/scripts/powershell/setup-plan.ps1\" -Json)",
+      "Bash(start http://localhost:3000)",
+      "Bash(powershell -Command \"Stop-Process -Id 8152 -Force\")"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+# Planner Server Parameters for Humanoid Navigation
+
+planner_server:
+  ros__parameters:
+    expected_planner_frequency: 20.0
+    use_sim_time: True
+    planner_plugins: ["GridBased"]
+    GridBased:
+      plugin: "nav2_navfn_planner::NavfnPlanner"
+      tolerance: 0.5
+      use_astar: false
+      allow_unknown: true
+      # Bipedal-specific parameters
+      humanoid_costmap:
+        plugin: "nav2_navfn_planner::HumanoidCostmap"
+        # Parameters to account for bipedal locomotion constraints
+        step_height: 0.2
+        foot_size: 0.15
+        max_step_width: 0.3
+        # Additional bipedal constraints
+        min_turn_radius: 0.4
+        max_step_length: 0.6
+        max_step_height: 0.2
+        max_step_down: 0.15
+
+planner_server_rclcpp_node:
+  ros__parameters:
+    use_sim_time: True

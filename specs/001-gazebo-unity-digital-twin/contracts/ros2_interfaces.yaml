@@ -1,0 +1,99 @@
+# ROS 2 Interfaces Contract: Digital Twin Curriculum
+
+## Message Types
+
+### sensor_msgs/LaserScan
+- **Description**: LiDAR sensor data
+- **Fields**:
+  - header: std_msgs/Header
+  - angle_min: float32 (minimum angle of the scan [rad])
+  - angle_max: float32 (maximum angle of the scan [rad])
+  - angle_increment: float32 (angular distance between measurements [rad])
+  - time_increment: float32 (time between measurements [seconds])
+  - scan_time: float32 (time between scans [seconds])
+  - range_min: float32 (minimum range value [m])
+  - range_max: float32 (maximum range value [m])
+  - ranges: float32[] (range data [m])
+  - intensities: float32[] (intensity data [device-specific units])
+
+### sensor_msgs/Image
+- **Description**: Camera sensor data
+- **Fields**:
+  - header: std_msgs/Header
+  - height: uint32
+  - width: uint32
+  - encoding: string
+  - is_bigendian: uint8
+  - step: uint32
+  - data: uint8[]
+
+### sensor_msgs/Imu
+- **Description**: IMU sensor data
+- **Fields**:
+  - header: std_msgs/Header
+  - orientation: geometry_msgs/Quaternion
+  - orientation_covariance: float64[9]
+  - angular_velocity: geometry_msgs/Vector3
+  - angular_velocity_covariance: float64[9]
+  - linear_acceleration: geometry_msgs/Vector3
+  - linear_acceleration_covariance: float64[9]
+
+### sensor_msgs/JointState
+- **Description**: Robot joint states
+- **Fields**:
+  - header: std_msgs/Header
+  - name: string[]
+  - position: float64[]
+  - velocity: float64[]
+  - effort: float64[]
+
+## Services
+
+### std_srvs/Empty
+- **Description**: Simple service to trigger an action without parameters
+- **Request**: Empty
+- **Response**: Empty
+- **Usage**: Reset simulation, trigger data capture
+
+### controller_manager_msgs/ListControllers
+- **Description**: List available controllers
+- **Request**: Empty
+- **Response**:
+  - controller: controller_manager_msgs/ControllerState[]
+- **Usage**: Query available robot controllers
+
+## Actions
+
+### control_msgs/FollowJointTrajectory
+- **Description**: Command robot to follow a trajectory
+- **Goal**: trajectory_msgs/JointTrajectory
+- **Result**: control_msgs/FollowJointTrajectory_Result
+- **Feedback**: control_msgs/FollowJointTrajectory_Feedback
+- **Usage**: Send joint position commands to robot
+
+## Topics
+
+### Published Topics
+- **/scan**: sensor_msgs/LaserScan - LiDAR sensor data
+- **/camera/image_raw**: sensor_msgs/Image - Camera sensor data
+- **/imu/data**: sensor_msgs/Imu - IMU sensor data
+- **/joint_states**: sensor_msgs/JointState - Robot joint positions
+- **/tf**: tf2_msgs/TFMessage - Coordinate transforms
+- **/tf_static**: tf2_msgs/TFMessage - Static coordinate transforms
+
+### Subscribed Topics
+- **/joint_commands**: trajectory_msgs/JointTrajectory - Joint position commands
+- **/cmd_vel**: geometry_msgs/Twist - Velocity commands
+- **/move_group/goal**: moveit_msgs/MotionPlanRequest - Motion planning requests
+
+## Quality of Service Settings
+
+### Sensor Topics
+- **Reliability**: Best effort for camera and LiDAR, reliable for IMU
+- **Durability**: Volatile
+- **History**: Keep last N messages (N=1 for real-time, N=10 for buffered)
+
+### Control Topics
+- **Reliability**: Reliable
+- **Durability**: Volatile
+- **History**: Keep last N messages (N=1 for latest command)

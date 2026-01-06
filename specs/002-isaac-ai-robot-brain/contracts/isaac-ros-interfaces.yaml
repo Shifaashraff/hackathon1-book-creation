@@ -1,0 +1,194 @@
+# Isaac ROS Interfaces Contract: Isaac AI Robot Brain
+
+## Message Types
+
+### sensor_msgs/Image
+- **Description**: Camera sensor data from Isaac Sim
+- **Fields**:
+  - header: std_msgs/Header
+  - height: uint32
+  - width: uint32
+  - encoding: string
+  - is_bigendian: uint8
+  - step: uint32
+  - data: uint8[]
+
+### sensor_msgs/CameraInfo
+- **Description**: Camera calibration parameters
+- **Fields**:
+  - header: std_msgs/Header
+  - height: uint32
+  - width: uint32
+  - distortion_model: string
+  - d: float64[]
+  - k: float64[9]
+  - r: float64[9]
+  - p: float64[12]
+
+### sensor_msgs/Imu
+- **Description**: IMU sensor data from Isaac Sim
+- **Fields**:
+  - header: std_msgs/Header
+  - orientation: geometry_msgs/Quaternion
+  - orientation_covariance: float64[9]
+  - angular_velocity: geometry_msgs/Vector3
+  - angular_velocity_covariance: float64[9]
+  - linear_acceleration: geometry_msgs/Vector3
+  - linear_acceleration_covariance: float64[9]
+
+### sensor_msgs/LaserScan
+- **Description**: LiDAR sensor data from Isaac Sim
+- **Fields**:
+  - header: std_msgs/Header
+  - angle_min: float32 (minimum angle of the scan [rad])
+  - angle_max: float32 (maximum angle of the scan [rad])
+  - angle_increment: float32 (angular distance between measurements [rad])
+  - time_increment: float32 (time between measurements [seconds])
+  - scan_time: float32 (time between scans [seconds])
+  - range_min: float32 (minimum range value [m])
+  - range_max: float32 (maximum range value [m])
+  - ranges: float32[] (range data [m])
+  - intensities: float32[] (intensity data [device-specific units])
+
+### geometry_msgs/PoseStamped
+- **Description**: Pose estimate with timestamp and frame ID
+- **Fields**:
+  - header: std_msgs/Header
+  - pose: geometry_msgs/Pose
+
+### nav_msgs/OccupancyGrid
+- **Description**: Map representation for navigation
+- **Fields**:
+  - header: std_msgs/Header
+  - info: nav_msgs/MapMetaData
+  - data: int8[]
+
+### nav_msgs/Path
+- **Description**: Planned path for navigation
+- **Fields**:
+  - header: std_msgs/Header
+  - poses: geometry_msgs/PoseStamped[]
+
+### visualization_msgs/MarkerArray
+- **Description**: Visualization markers for Isaac Sim
+- **Fields**:
+  - markers: visualization_msgs/Marker[]
+
+## Isaac ROS Specific Messages
+
+### isaac_ros_apriltag_interfaces/msg/AprilTagDetectionArray
+- **Description**: AprilTag detections for VSLAM
+- **Fields**:
+  - header: std_msgs/Header
+  - detections: isaac_ros_apriltag_interfaces/msg/AprilTagDetection[]
+
+### isaac_ros_visual_slam_interfaces/msg/IsaacROSVizSlamResults
+- **Description**: VSLAM results including pose and map
+- **Fields**:
+  - header: std_msgs/Header
+  - pose: geometry_msgs/PoseWithCovarianceStamped
+  - odometry: nav_msgs/Odometry
+
+### isaac_ros_managed_nitros_msg_type/nitros_detection2_d_array
+- **Description**: Detection array in Nitros format for optimized processing
+- **Fields**:
+  - detections: isaac_ros_detectnet_interfaces/msg/Detection2D[]
+
+## Services
+
+### std_srvs/Empty
+- **Description**: Simple service to trigger an action without parameters
+- **Request**: Empty
+- **Response**: Empty
+- **Usage**: Reset simulation, trigger data capture
+
+### nav2_msgs/GetCostmap
+- **Description**: Get current costmap from navigation system
+- **Request**: Empty
+- **Response**:
+  - map: nav_msgs/OccupancyGrid
+- **Usage**: Retrieve current navigation costmap
+
+### nav2_msgs/LoadMap
+- **Description**: Load a new map for navigation
+- **Request**:
+  - map_url: string
+- **Response**:
+  - result: int8
+  - message: string
+- **Usage**: Dynamically load navigation maps
+
+## Actions
+
+### nav2_msgs/NavigateToPose
+- **Description**: Navigate robot to a specific pose
+- **Goal**: geometry_msgs/PoseStamped
+- **Result**: nav2_msgs/NavigateToPose_Result
+- **Feedback**: nav2_msgs/NavigateToPose_Feedback
+- **Usage**: Send robot to specific location and orientation
+
+### nav2_msgs/ComputePathToPose
+- **Description**: Compute path to a specific pose without executing
+- **Goal**: geometry_msgs/PoseStamped
+- **Result**: nav2_msgs/ComputePathToPose_Result
+- **Feedback**: nav2_msgs/ComputePathToPose_Feedback
+- **Usage**: Plan path without executing navigation
+
+## Topics
+
+### Published Topics (Isaac ROS)
+
+- **/front_stereo_camera/left/image_rect_color**: Left camera image from stereo pair
+- **/front_stereo_camera/right/image_rect**: Right camera image from stereo pair
+- **/front_stereo_camera/disparity**: Disparity map from stereo processing
+- **/isaac_ros/apriltag_detections**: AprilTag detections for VSLAM
+- **/isaac_ros/visual_slam/visual_slam_graph_edges**: VSLAM graph edges
+- **/isaac_ros/visual_slam/visual_slam_poses**: VSLAM estimated poses
+- **/isaac_ros/visual_slam/landmarks**: VSLAM landmark points
+- **/isaac_ros/detectnet/detections**: Object detection results
+- **/isaac_ros/segmentation/segmentation_map**: Semantic segmentation output
+
+### Published Topics (Navigation)
+
+- **/humanoid/odom**: Odometry information for humanoid robot
+- **/humanoid/goal_pose**: Navigation goal commands
+- **/humanoid/plan**: Planned navigation path
+- **/humanoid/local_costmap/costmap**: Local navigation costmap
+- **/humanoid/global_costmap/costmap**: Global navigation costmap
+- **/tf**: Coordinate transforms
+- **/tf_static**: Static coordinate transforms
+
+### Subscribed Topics (Isaac ROS)
+
+- **/humanoid/joint_states**: Joint positions from robot
+- **/humanoid/cmd_vel**: Velocity commands for robot
+- **/front_stereo_camera/left/camera_info**: Left camera calibration
+- **/front_stereo_camera/right/camera_info**: Right camera calibration
+- **/humanoid/imu/data**: IMU data from robot
+- **/humanoid/scan**: LiDAR scan data
+
+## Quality of Service Settings
+
+### Isaac ROS Topics
+- **Camera Images**: Best effort reliability, volatile durability, keep last 1 messages
+- **VSLAM Results**: Reliable reliability, volatile durability, keep last 10 messages
+- **Detection Results**: Best effort reliability, volatile durability, keep last 5 messages
+- **Odometry**: Reliable reliability, volatile durability, keep last 10 messages
+
+### Navigation Topics
+- **Costmaps**: Reliable reliability, volatile durability, keep last 1 messages
+- **Path Planning**: Reliable reliability, volatile durability, keep last 5 messages
+- **Goal Commands**: Reliable reliability, volatile durability, keep last 1 messages
+
+## Isaac Sim Integration Contracts
+
+### Isaac Sim to ROS Bridge
+- **Transforms**: All Isaac Sim transforms published to `/tf` with appropriate frame IDs
+- **Sensor Data**: Isaac Sim sensor data published to standard ROS topics
+- **Robot State**: Isaac Sim robot joint states published to `/joint_states`
+- **Clock**: Isaac Sim simulation clock published to `/clock` (for use_sim_time)
+
+### Isaac ROS to Isaac Sim
+- **Robot Control**: ROS velocity commands translated to Isaac Sim actuator commands
+- **Simulation Control**: ROS services to control Isaac Sim simulation state
+- **Environment Updates**: ROS topics to modify Isaac Sim environment parameters

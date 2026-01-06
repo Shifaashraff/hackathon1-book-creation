@@ -1,0 +1,11 @@
+# Request
+string sensor_type  # Type of sensor data to retrieve (rgb, depth, segmentation, detection, etc.)
+bool include_timestamps  # Whether to include timestamps in the response
+bool include_confidence  # Whether to include confidence scores
+
+---
+# Response
+bool success
+string message
+isaac_ros_messages/msg/PerceptionData perception_data
+float32 processing_time_ms

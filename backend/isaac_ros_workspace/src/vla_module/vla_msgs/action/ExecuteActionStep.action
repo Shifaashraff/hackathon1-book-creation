@@ -1,0 +1,19 @@
+# Action for executing individual action steps in the VLA system
+
+# Goal: Contains the action step to be executed
+string action_id
+string action_type
+string[] parameters
+duration timeout
+
+---
+# Result: Contains the execution result
+bool success
+string error_message
+string[] output
+
+---
+# Feedback: Provides ongoing feedback during execution
+string current_status
+string feedback_message
+float32 progress

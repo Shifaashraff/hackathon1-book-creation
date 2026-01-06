@@ -1,0 +1,32 @@
+# Goal definition
+bool enable_stereo_camera
+bool enable_loop_closure
+bool enable_relocalization
+float32 processing_frequency
+float32 keyframe_distance_threshold
+float32 keyframe_angle_threshold
+string map_save_path  # Optional: path to save the map
+
+---
+# Result definition
+bool success
+string message
+int32 processed_frames
+int32 keyframe_count
+float32 tracking_confidence
+geometry_msgs/PoseArray final_trajectory
+nav_msgs/OccupancyGrid final_map
+string map_save_status
+
+---
+# Feedback definition
+int32 processed_frames
+int32 keyframe_count
+float32 tracking_confidence
+string tracking_status
+bool is_localized
+bool is_mapping
+geometry_msgs/Pose current_pose
+float32 processing_time_ms
+int32 feature_count
+int32 map_size

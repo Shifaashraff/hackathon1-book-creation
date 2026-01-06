@@ -1,0 +1,8 @@
+# Action to generate cognitive plans from voice commands
+VoiceCommand command       # The voice command to plan for
+
+---
+CognitivePlan result       # The generated cognitive plan
+
+---
+CognitivePlan feedback     # Updates on planning progress
