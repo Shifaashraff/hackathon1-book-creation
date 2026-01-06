@@ -123,8 +123,8 @@ Students should demonstrate understanding of:
 - **Measurement**: Percentage of tasks completed successfully
 
 ### System Integration Performance
-- **Target**: <2 second response time from voice command to action initiation
-- **Minimum Acceptable**: <5 second response time from voice command to action initiation
+- **Target**: \<2 second response time from voice command to action initiation
+- **Minimum Acceptable**: \<5 second response time from voice command to action initiation
 - **Measurement**: End-to-end response time
 
 ## Rubric for Practical Exercises

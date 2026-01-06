@@ -1,312 +1,269 @@
 {
-  "/__docusaurus/debug-5ff": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/__docusaurus/debug/config-5ba": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/__docusaurus/debug/content-a2b": {
-    "__comp": "__comp---theme-debug-contentba-8-ce7",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    },
-    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
-  },
-  "/__docusaurus/debug/globalData-c3c": {
-    "__comp": "__comp---theme-debug-global-dataede-0fa",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/__docusaurus/debug/metadata-156": {
-    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/__docusaurus/debug/registry-88c": {
-    "__comp": "__comp---theme-debug-registry-679-501",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/__docusaurus/debug/routes-000": {
-    "__comp": "__comp---theme-debug-routes-946-699",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
   "/markdown-page-3d7": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__comp": "1f391b9e",
     "__context": {
-      "plugin": "plugin---markdown-pagea-74-7b5"
+      "plugin": "a7456010"
     },
-    "content": "content---markdown-page-393-028"
+    "content": "393be207"
   },
   "/docs-aca": {
-    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__comp": "5e95c892",
     "__context": {
-      "plugin": "plugin---docsaba-d7c"
+      "plugin": "aba21aa0"
     }
   },
   "/docs-734": {
-    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "__props": "__props---docs-005-788"
+    "__comp": "a7bd4aaa",
+    "__props": "0058b4c6"
   },
   "/docs-9ce": {
-    "__comp": "__comp---theme-doc-roota-94-67a"
+    "__comp": "a94703ab"
   },
   "/docs/assessments-d17": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-assessmentsce-1-b62"
+    "__comp": "17896441",
+    "content": "ce12a471"
   },
   "/docs/assessments/chapter-1-257": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-assessments-chapter-1-a-6-b-902"
+    "__comp": "17896441",
+    "content": "a6b062ca"
   },
   "/docs/assessments/module-1-assessment-d01": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-assessments-module-1-assessment-171-e4c"
+    "__comp": "17896441",
+    "content": "17162ce7"
   },
   "/docs/assessments/module-2-assessment-2c4": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-assessments-module-2-assessmentd-05-ebe"
+    "__comp": "17896441",
+    "content": "d05a455e"
   },
   "/docs/assessments/module-3-assessment-997": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-assessments-module-3-assessment-62-b-eb9"
+    "__comp": "17896441",
+    "content": "62b11331"
   },
   "/docs/assessments/module-4-assessment-210": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-assessments-module-4-assessment-5-b-6-1bd"
+    "__comp": "17896441",
+    "content": "5b69425e"
   },
   "/docs/assessments/rubrics-d52": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-assessments-rubricseef-fa9"
+    "__comp": "17896441",
+    "content": "eef2c35e"
   },
   "/docs/intro-61d": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-intro-0-e-3-be1"
+    "__comp": "17896441",
+    "content": "0e384e19"
   },
   "/docs/module-1-intro/basics-18c": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-1-intro-basics-8-d-0-cf4"
+    "__comp": "17896441",
+    "content": "8d018101"
   },
   "/docs/module-1-intro/exercises-d9a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-1-intro-exercises-0-a-7-035"
+    "__comp": "17896441",
+    "content": "0a730906"
   },
   "/docs/module-1-intro/setup-fbe": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-1-intro-setup-9-ad-42e"
+    "__comp": "17896441",
+    "content": "9ad6239e"
   },
   "/docs/module-2-ros-basics/communication-212": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-2-ros-basics-communication-231-2db"
+    "__comp": "17896441",
+    "content": "231ec892"
   },
   "/docs/module-2-ros-basics/exercises-897": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-2-ros-basics-exercisesb-97-51f"
+    "__comp": "17896441",
+    "content": "b9701166"
   },
   "/docs/module-2-ros-basics/ros-fundamentals-707": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-2-ros-basics-ros-fundamentals-4-b-9-109"
+    "__comp": "17896441",
+    "content": "4b94d1c5"
   },
   "/docs/module-3-ai-robot-brain-f86": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-8-c-6-ff1"
+    "__comp": "17896441",
+    "content": "8c650429"
   },
   "/docs/module-3-ai-robot-brain/assessments-c2b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-assessments-977-1f1"
+    "__comp": "17896441",
+    "content": "9776705b"
   },
   "/docs/module-3-ai-robot-brain/assessments/isaac-ros-assessment-e26": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-assessments-isaac-ros-assessment-99-a-2e6"
+    "__comp": "17896441",
+    "content": "99a399cc"
   },
   "/docs/module-3-ai-robot-brain/assessments/isaac-sim-assessment-30c": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-assessments-isaac-sim-assessment-868-ce4"
+    "__comp": "17896441",
+    "content": "8689d5dc"
   },
   "/docs/module-3-ai-robot-brain/assessments/nav2-assessment-c4b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-assessments-nav-2-assessment-3-ca-6f5"
+    "__comp": "17896441",
+    "content": "3cab3e0a"
   },
   "/docs/module-3-ai-robot-brain/assets-f84": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-assets-35-a-2ef"
+    "__comp": "17896441",
+    "content": "35a38e79"
   },
   "/docs/module-3-ai-robot-brain/deliverables-93b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-deliverablese-54-955"
+    "__comp": "17896441",
+    "content": "e542a221"
   },
   "/docs/module-3-ai-robot-brain/faq-123": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-faqc-7-e-46a"
+    "__comp": "17896441",
+    "content": "c7ee2957"
   },
   "/docs/module-3-ai-robot-brain/intro-10e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-introf-9-f-43c"
+    "__comp": "17896441",
+    "content": "f9f5edef"
   },
   "/docs/module-3-ai-robot-brain/isaac-ros-1ed": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-isaac-ros-843-c91"
+    "__comp": "17896441",
+    "content": "843ea53a"
   },
   "/docs/module-3-ai-robot-brain/isaac-ros/ai-navigation-84b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-isaac-ros-ai-navigationc-23-c70"
+    "__comp": "17896441",
+    "content": "c232ad1a"
   },
   "/docs/module-3-ai-robot-brain/isaac-ros/exercises-a34": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-isaac-ros-exercises-210-58e"
+    "__comp": "17896441",
+    "content": "210b84fa"
   },
   "/docs/module-3-ai-robot-brain/isaac-ros/perception-pipelines-aa1": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-isaac-ros-perception-pipelinesfb-9-704"
+    "__comp": "17896441",
+    "content": "fb97518b"
   },
   "/docs/module-3-ai-robot-brain/isaac-ros/vslam-setup-f9b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-isaac-ros-vslam-setupc-45-6bd"
+    "__comp": "17896441",
+    "content": "c4581475"
   },
   "/docs/module-3-ai-robot-brain/isaac-sim-9bf": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-isaac-sim-173-4b4"
+    "__comp": "17896441",
+    "content": "173a95a2"
   },
   "/docs/module-3-ai-robot-brain/isaac-sim/exercises-206": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-isaac-sim-exercisesbda-c84"
+    "__comp": "17896441",
+    "content": "bdac59e1"
   },
   "/docs/module-3-ai-robot-brain/isaac-sim/photorealistic-simulation-b8e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-isaac-sim-photorealistic-simulationcac-886"
+    "__comp": "17896441",
+    "content": "caceb7b2"
   },
   "/docs/module-3-ai-robot-brain/isaac-sim/setup-fe4": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-isaac-sim-setup-288-a9e"
+    "__comp": "17896441",
+    "content": "2882ba84"
   },
   "/docs/module-3-ai-robot-brain/isaac-sim/synthetic-data-generation-5e0": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-isaac-sim-synthetic-data-generation-42-d-b82"
+    "__comp": "17896441",
+    "content": "42d38198"
   },
   "/docs/module-3-ai-robot-brain/nav2-1f1": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-nav-2-c-01-5a1"
+    "__comp": "17896441",
+    "content": "c01c704d"
   },
   "/docs/module-3-ai-robot-brain/nav2/bipedal-navigation-343": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-nav-2-bipedal-navigation-6-bc-c68"
+    "__comp": "17896441",
+    "content": "6bce1850"
   },
   "/docs/module-3-ai-robot-brain/nav2/exercises-b1e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-nav-2-exercisesb-2-f-679"
+    "__comp": "17896441",
+    "content": "b2f71eee"
   },
   "/docs/module-3-ai-robot-brain/nav2/obstacle-avoidance-03c": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-nav-2-obstacle-avoidancee-7-f-a24"
+    "__comp": "17896441",
+    "content": "e7f24a00"
   },
   "/docs/module-3-ai-robot-brain/nav2/path-planning-8f1": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-nav-2-path-planning-5-d-1-0b3"
+    "__comp": "17896441",
+    "content": "5d191421"
   },
   "/docs/module-3-ai-robot-brain/quickstart-bed": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-quickstartbb-9-a3c"
+    "__comp": "17896441",
+    "content": "bb97d34c"
   },
   "/docs/module-3-ai-robot-brain/success_criteria_verification-382": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-success-criteria-verification-02-c-630"
+    "__comp": "17896441",
+    "content": "02c1905c"
   },
   "/docs/module-3-ai-robot-brain/troubleshooting-b2e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-3-ai-robot-brain-troubleshooting-93-a-6f2"
+    "__comp": "17896441",
+    "content": "93ada10e"
   },
   "/docs/module-4-vla/assessments/rubrics-b0f": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-4-vla-assessments-rubricse-11-d26"
+    "__comp": "17896441",
+    "content": "e11a0cff"
   },
   "/docs/module-4-vla/assessments/vla-assessment-12d": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-4-vla-assessments-vla-assessment-7-cf-254"
+    "__comp": "17896441",
+    "content": "7cfb81c3"
   },
   "/docs/module-4-vla/autonomous-execution/capstone-project-c0e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-4-vla-autonomous-execution-capstone-projectb-0-f-629"
+    "__comp": "17896441",
+    "content": "b0f29c43"
   },
   "/docs/module-4-vla/autonomous-execution/exercises-521": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-4-vla-autonomous-execution-exercises-903-fa3"
+    "__comp": "17896441",
+    "content": "903090d4"
   },
   "/docs/module-4-vla/autonomous-execution/task-execution-7cb": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-4-vla-autonomous-execution-task-execution-7-cb-5ba"
+    "__comp": "17896441",
+    "content": "7cb1912b"
   },
   "/docs/module-4-vla/capstone-project-e0b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-4-vla-capstone-projectcd-1-ce1"
+    "__comp": "17896441",
+    "content": "cd1ecd84"
   },
   "/docs/module-4-vla/cognitive-planning-6ba": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-4-vla-cognitive-planning-2-de-567"
+    "__comp": "17896441",
+    "content": "2de1ffc5"
   },
   "/docs/module-4-vla/cognitive-planning/exercises-02b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-4-vla-cognitive-planning-exercises-941-341"
+    "__comp": "17896441",
+    "content": "9415cb51"
   },
   "/docs/module-4-vla/cognitive-planning/planning-algorithms-575": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-4-vla-cognitive-planning-planning-algorithmscd-0-42c"
+    "__comp": "17896441",
+    "content": "cd028220"
   },
   "/docs/module-4-vla/cognitive-planning/ros2-conversion-0ca": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-4-vla-cognitive-planning-ros-2-conversion-5-bd-eda"
+    "__comp": "17896441",
+    "content": "5bdffdce"
   },
   "/docs/module-4-vla/demo-guide-da1": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-4-vla-demo-guide-740-bdf"
+    "__comp": "17896441",
+    "content": "740bdf80"
   },
   "/docs/module-4-vla/exercises-7ca": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-4-vla-exerciseseb-5-d8c"
+    "__comp": "17896441",
+    "content": "eb5b4b6e"
   },
   "/docs/module-4-vla/intro-51c": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-4-vla-intro-361-5ff"
+    "__comp": "17896441",
+    "content": "3613bb70"
   },
   "/docs/module-4-vla/quickstart-8ba": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-4-vla-quickstart-77-a-9cc"
+    "__comp": "17896441",
+    "content": "77accd2d"
   },
   "/docs/module-4-vla/task-execution-e00": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-4-vla-task-executionb-05-090"
+    "__comp": "17896441",
+    "content": "b059f496"
   },
   "/docs/module-4-vla/voice-to-action-e0a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-4-vla-voice-to-actiona-7-f-c95"
+    "__comp": "17896441",
+    "content": "a7fec69c"
   },
   "/docs/module-4-vla/voice-to-action/audio-processing-df3": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-4-vla-voice-to-action-audio-processing-78-e-b0a"
+    "__comp": "17896441",
+    "content": "78e976a0"
   },
   "/docs/module-4-vla/voice-to-action/exercises-9b0": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-4-vla-voice-to-action-exercises-1-cc-188"
+    "__comp": "17896441",
+    "content": "1ccf0778"
   },
   "/docs/module-4-vla/voice-to-action/whisper-setup-928": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-module-4-vla-voice-to-action-whisper-setup-8-b-8-cec"
+    "__comp": "17896441",
+    "content": "8b80011d"
   },
   "/-2e1": {
-    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
+    "__comp": "c4f5d8e4",
     "__context": {
-      "plugin": "plugin---markdown-pagea-74-7b5"
+      "plugin": "a7456010"
     },
-    "config": "config---5-e-9-4f3"
+    "config": "5e9f5e1a"
   }
 }
