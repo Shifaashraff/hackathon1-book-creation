@@ -1,0 +1,27 @@
+{
+  "id": "module-1-intro/basics",
+  "title": "Module 1: Isaac Sim Basics",
+  "description": "This module covers the fundamental concepts of Isaac Sim and how to work with the simulation environment effectively.",
+  "source": "@site/docs/module-1-intro/basics.md",
+  "sourceDirName": "module-1-intro",
+  "slug": "/module-1-intro/basics",
+  "permalink": "/docs/module-1-intro/basics",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-1-intro/basics.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Module 1: Isaac Sim Setup",
+    "permalink": "/docs/module-1-intro/setup"
+  },
+  "next": {
+    "title": "Module 1: Exercises",
+    "permalink": "/docs/module-1-intro/exercises"
+  }
+}

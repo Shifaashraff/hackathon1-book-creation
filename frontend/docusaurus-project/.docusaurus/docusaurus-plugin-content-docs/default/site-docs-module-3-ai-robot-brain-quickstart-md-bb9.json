@@ -1,0 +1,24 @@
+{
+  "id": "module-3-ai-robot-brain/quickstart",
+  "title": "Quickstart Guide: Isaac AI Robot Brain (NVIDIA Isaac)",
+  "description": "This quickstart guide provides a step-by-step introduction to setting up and running the Isaac AI Robot Brain system with photorealistic humanoid simulation, perception pipelines, and navigation.",
+  "source": "@site/docs/module-3-ai-robot-brain/quickstart.md",
+  "sourceDirName": "module-3-ai-robot-brain",
+  "slug": "/module-3-ai-robot-brain/quickstart",
+  "permalink": "/docs/module-3-ai-robot-brain/quickstart",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3-ai-robot-brain/quickstart.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Path Planning Guide for Bipedal Humanoid Navigation",
+    "permalink": "/docs/module-3-ai-robot-brain/nav2/path-planning"
+  },
+  "next": {
+    "title": "Isaac AI Robot Brain - Success Criteria Verification",
+    "permalink": "/docs/module-3-ai-robot-brain/success_criteria_verification"
+  }
+}

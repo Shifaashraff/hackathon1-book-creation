@@ -1,0 +1,24 @@
+{
+  "id": "module-3-ai-robot-brain/assessments/nav2-assessment",
+  "title": "Nav2 Assessment Materials",
+  "description": "Learning Objectives Assessment",
+  "source": "@site/docs/module-3-ai-robot-brain/assessments/nav2-assessment.md",
+  "sourceDirName": "module-3-ai-robot-brain/assessments",
+  "slug": "/module-3-ai-robot-brain/assessments/nav2-assessment",
+  "permalink": "/docs/module-3-ai-robot-brain/assessments/nav2-assessment",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3-ai-robot-brain/assessments/nav2-assessment.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Isaac Sim Assessment Materials",
+    "permalink": "/docs/module-3-ai-robot-brain/assessments/isaac-sim-assessment"
+  },
+  "next": {
+    "title": "Placeholder for Isaac AI Robot Brain Assets",
+    "permalink": "/docs/module-3-ai-robot-brain/assets/"
+  }
+}

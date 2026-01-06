@@ -1,0 +1,27 @@
+{
+  "id": "module-2-ros-basics/exercises",
+  "title": "Module 2: Exercises",
+  "description": "Complete these exercises to practice ROS 2 concepts learned in Module 2.",
+  "source": "@site/docs/module-2-ros-basics/exercises.md",
+  "sourceDirName": "module-2-ros-basics",
+  "slug": "/module-2-ros-basics/exercises",
+  "permalink": "/docs/module-2-ros-basics/exercises",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-2-ros-basics/exercises.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Module 2: ROS 2 Communication Patterns",
+    "permalink": "/docs/module-2-ros-basics/communication"
+  },
+  "next": {
+    "title": "Module 3: The AI-Robot Brain (NVIDIA Isaac)",
+    "permalink": "/docs/module-3-ai-robot-brain/"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "assessments/chapter-1",
+  "title": "Chapter 1 Assessment",
+  "description": "Assessment for Chapter 1: Isaac Sim Introduction",
+  "source": "@site/docs/assessments/chapter-1.md",
+  "sourceDirName": "assessments",
+  "slug": "/assessments/chapter-1",
+  "permalink": "/docs/assessments/chapter-1",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/assessments/chapter-1.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Assessments Overview",
+    "permalink": "/docs/assessments/"
+  },
+  "next": {
+    "title": "Module 1 Assessment",
+    "permalink": "/docs/assessments/module-1-assessment"
+  }
+}

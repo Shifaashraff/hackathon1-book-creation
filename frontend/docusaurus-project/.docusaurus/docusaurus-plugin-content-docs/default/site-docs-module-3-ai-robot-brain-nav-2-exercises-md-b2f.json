@@ -1,0 +1,24 @@
+{
+  "id": "module-3-ai-robot-brain/nav2/exercises",
+  "title": "Nav2 Exercises for Bipedal Humanoid Navigation",
+  "description": "This document contains hands-on exercises for practicing Nav2 path planning and bipedal navigation concepts.",
+  "source": "@site/docs/module-3-ai-robot-brain/nav2/exercises.md",
+  "sourceDirName": "module-3-ai-robot-brain/nav2",
+  "slug": "/module-3-ai-robot-brain/nav2/exercises",
+  "permalink": "/docs/module-3-ai-robot-brain/nav2/exercises",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3-ai-robot-brain/nav2/exercises.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Bipedal Navigation Guide for Humanoid Robots",
+    "permalink": "/docs/module-3-ai-robot-brain/nav2/bipedal-navigation"
+  },
+  "next": {
+    "title": "Obstacle Avoidance Guide for Bipedal Humanoid Navigation",
+    "permalink": "/docs/module-3-ai-robot-brain/nav2/obstacle-avoidance"
+  }
+}

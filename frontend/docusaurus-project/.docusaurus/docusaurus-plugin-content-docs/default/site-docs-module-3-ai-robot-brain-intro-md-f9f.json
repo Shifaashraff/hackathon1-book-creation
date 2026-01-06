@@ -1,0 +1,27 @@
+{
+  "id": "module-3-ai-robot-brain/intro",
+  "title": "Isaac AI Robot Brain Curriculum",
+  "description": "Welcome to the Isaac AI Robot Brain curriculum, where you'll learn to develop AI-powered humanoid robotics using the NVIDIA Isaac ecosystem. This module builds upon your existing knowledge of ROS 2 and simulation from Modules 1 & 2.",
+  "source": "@site/docs/module-3-ai-robot-brain/intro.md",
+  "sourceDirName": "module-3-ai-robot-brain",
+  "slug": "/module-3-ai-robot-brain/intro",
+  "permalink": "/docs/module-3-ai-robot-brain/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3-ai-robot-brain/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Module 3: The AI-Robot Brain (NVIDIA Isaac)",
+    "permalink": "/docs/module-3-ai-robot-brain/"
+  },
+  "next": {
+    "title": "Isaac Sim: Photorealistic Simulation and Synthetic Data Generation",
+    "permalink": "/docs/module-3-ai-robot-brain/isaac-sim/"
+  }
+}

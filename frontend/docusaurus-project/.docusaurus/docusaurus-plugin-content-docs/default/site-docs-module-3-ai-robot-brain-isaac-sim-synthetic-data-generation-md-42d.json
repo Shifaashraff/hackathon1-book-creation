@@ -1,0 +1,27 @@
+{
+  "id": "module-3-ai-robot-brain/isaac-sim/synthetic-data-generation",
+  "title": "Synthetic Data Generation Guide",
+  "description": "This guide will help you generate high-quality synthetic datasets for AI training using Isaac Sim's photorealistic humanoid robot simulations.",
+  "source": "@site/docs/module-3-ai-robot-brain/isaac-sim/synthetic-data-generation.md",
+  "sourceDirName": "module-3-ai-robot-brain/isaac-sim",
+  "slug": "/module-3-ai-robot-brain/isaac-sim/synthetic-data-generation",
+  "permalink": "/docs/module-3-ai-robot-brain/isaac-sim/synthetic-data-generation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3-ai-robot-brain/isaac-sim/synthetic-data-generation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Photorealistic Simulation Guide",
+    "permalink": "/docs/module-3-ai-robot-brain/isaac-sim/photorealistic-simulation"
+  },
+  "next": {
+    "title": "Isaac Sim Exercises",
+    "permalink": "/docs/module-3-ai-robot-brain/isaac-sim/exercises"
+  }
+}

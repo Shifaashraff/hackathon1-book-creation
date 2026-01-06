@@ -1,0 +1,27 @@
+{
+  "id": "module-1-intro/exercises",
+  "title": "Module 1: Exercises",
+  "description": "Complete these exercises to practice the concepts learned in Module 1.",
+  "source": "@site/docs/module-1-intro/exercises.md",
+  "sourceDirName": "module-1-intro",
+  "slug": "/module-1-intro/exercises",
+  "permalink": "/docs/module-1-intro/exercises",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-1-intro/exercises.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Module 1: Isaac Sim Basics",
+    "permalink": "/docs/module-1-intro/basics"
+  },
+  "next": {
+    "title": "Module 2: ROS 2 Fundamentals",
+    "permalink": "/docs/module-2-ros-basics/ros-fundamentals"
+  }
+}

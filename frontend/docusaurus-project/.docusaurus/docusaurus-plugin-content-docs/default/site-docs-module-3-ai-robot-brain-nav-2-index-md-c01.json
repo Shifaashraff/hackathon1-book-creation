@@ -1,0 +1,24 @@
+{
+  "id": "module-3-ai-robot-brain/nav2/index",
+  "title": "Nav2: Path Planning for Bipedal Humanoid Movement",
+  "description": "Welcome to the Nav2 section of the AI-Robot Brain curriculum. This module focuses on implementing path planning algorithms specifically tailored for bipedal humanoid movement using Nav2 to enable robots to navigate complex environments with human-like locomotion.",
+  "source": "@site/docs/module-3-ai-robot-brain/nav2/index.md",
+  "sourceDirName": "module-3-ai-robot-brain/nav2",
+  "slug": "/module-3-ai-robot-brain/nav2/",
+  "permalink": "/docs/module-3-ai-robot-brain/nav2/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3-ai-robot-brain/nav2/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "VSLAM Setup Guide for Isaac ROS",
+    "permalink": "/docs/module-3-ai-robot-brain/isaac-ros/vslam-setup"
+  },
+  "next": {
+    "title": "Bipedal Navigation Guide for Humanoid Robots",
+    "permalink": "/docs/module-3-ai-robot-brain/nav2/bipedal-navigation"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "module-3-ai-robot-brain/isaac-ros/exercises",
+  "title": "Isaac ROS Exercises",
+  "description": "This document contains hands-on exercises for practicing Isaac ROS perception and navigation concepts.",
+  "source": "@site/docs/module-3-ai-robot-brain/isaac-ros/exercises.md",
+  "sourceDirName": "module-3-ai-robot-brain/isaac-ros",
+  "slug": "/module-3-ai-robot-brain/isaac-ros/exercises",
+  "permalink": "/docs/module-3-ai-robot-brain/isaac-ros/exercises",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3-ai-robot-brain/isaac-ros/exercises.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "AI Navigation Guide for Isaac ROS",
+    "permalink": "/docs/module-3-ai-robot-brain/isaac-ros/ai-navigation"
+  },
+  "next": {
+    "title": "Perception Pipelines Guide for Isaac ROS",
+    "permalink": "/docs/module-3-ai-robot-brain/isaac-ros/perception-pipelines"
+  }
+}

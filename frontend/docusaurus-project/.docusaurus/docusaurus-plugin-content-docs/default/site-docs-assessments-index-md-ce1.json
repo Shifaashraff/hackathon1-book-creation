@@ -1,0 +1,23 @@
+{
+  "id": "assessments/index",
+  "title": "Assessments Overview",
+  "description": "This section contains assessments for each module of the Isaac AI Robot Brain curriculum.",
+  "source": "@site/docs/assessments/index.md",
+  "sourceDirName": "assessments",
+  "slug": "/assessments/",
+  "permalink": "/docs/assessments/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/assessments/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Chapter 1 Assessment",
+    "permalink": "/docs/assessments/chapter-1"
+  }
+}

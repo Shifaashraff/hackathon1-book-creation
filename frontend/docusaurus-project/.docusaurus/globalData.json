@@ -1,0 +1,328 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "assessments/index",
+          "docs": [
+            {
+              "id": "assessments/chapter-1",
+              "path": "/docs/assessments/chapter-1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "assessments/index",
+              "path": "/docs/assessments/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "assessments/module-1-assessment",
+              "path": "/docs/assessments/module-1-assessment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "assessments/module-2-assessment",
+              "path": "/docs/assessments/module-2-assessment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "assessments/module-3-assessment",
+              "path": "/docs/assessments/module-3-assessment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "assessments/module-4-assessment",
+              "path": "/docs/assessments/module-4-assessment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "assessments/rubrics",
+              "path": "/docs/assessments/rubrics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-1-intro/basics",
+              "path": "/docs/module-1-intro/basics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-1-intro/exercises",
+              "path": "/docs/module-1-intro/exercises",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-1-intro/setup",
+              "path": "/docs/module-1-intro/setup",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-2-ros-basics/communication",
+              "path": "/docs/module-2-ros-basics/communication",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-2-ros-basics/exercises",
+              "path": "/docs/module-2-ros-basics/exercises",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-2-ros-basics/ros-fundamentals",
+              "path": "/docs/module-2-ros-basics/ros-fundamentals",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/assessments/index",
+              "path": "/docs/module-3-ai-robot-brain/assessments/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/assessments/isaac-ros-assessment",
+              "path": "/docs/module-3-ai-robot-brain/assessments/isaac-ros-assessment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/assessments/isaac-sim-assessment",
+              "path": "/docs/module-3-ai-robot-brain/assessments/isaac-sim-assessment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/assessments/nav2-assessment",
+              "path": "/docs/module-3-ai-robot-brain/assessments/nav2-assessment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/assets/README",
+              "path": "/docs/module-3-ai-robot-brain/assets/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/deliverables",
+              "path": "/docs/module-3-ai-robot-brain/deliverables",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/faq",
+              "path": "/docs/module-3-ai-robot-brain/faq",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/index",
+              "path": "/docs/module-3-ai-robot-brain/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/intro",
+              "path": "/docs/module-3-ai-robot-brain/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/isaac-ros/ai-navigation",
+              "path": "/docs/module-3-ai-robot-brain/isaac-ros/ai-navigation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/isaac-ros/exercises",
+              "path": "/docs/module-3-ai-robot-brain/isaac-ros/exercises",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/isaac-ros/index",
+              "path": "/docs/module-3-ai-robot-brain/isaac-ros/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/isaac-ros/perception-pipelines",
+              "path": "/docs/module-3-ai-robot-brain/isaac-ros/perception-pipelines",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/isaac-ros/vslam-setup",
+              "path": "/docs/module-3-ai-robot-brain/isaac-ros/vslam-setup",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/isaac-sim/exercises",
+              "path": "/docs/module-3-ai-robot-brain/isaac-sim/exercises",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/isaac-sim/index",
+              "path": "/docs/module-3-ai-robot-brain/isaac-sim/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/isaac-sim/photorealistic-simulation",
+              "path": "/docs/module-3-ai-robot-brain/isaac-sim/photorealistic-simulation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/isaac-sim/setup",
+              "path": "/docs/module-3-ai-robot-brain/isaac-sim/setup",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/isaac-sim/synthetic-data-generation",
+              "path": "/docs/module-3-ai-robot-brain/isaac-sim/synthetic-data-generation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/nav2/bipedal-navigation",
+              "path": "/docs/module-3-ai-robot-brain/nav2/bipedal-navigation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/nav2/exercises",
+              "path": "/docs/module-3-ai-robot-brain/nav2/exercises",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/nav2/index",
+              "path": "/docs/module-3-ai-robot-brain/nav2/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/nav2/obstacle-avoidance",
+              "path": "/docs/module-3-ai-robot-brain/nav2/obstacle-avoidance",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/nav2/path-planning",
+              "path": "/docs/module-3-ai-robot-brain/nav2/path-planning",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/quickstart",
+              "path": "/docs/module-3-ai-robot-brain/quickstart",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/success_criteria_verification",
+              "path": "/docs/module-3-ai-robot-brain/success_criteria_verification",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3-ai-robot-brain/troubleshooting",
+              "path": "/docs/module-3-ai-robot-brain/troubleshooting",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/assessments/rubrics",
+              "path": "/docs/module-4-vla/assessments/rubrics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/assessments/vla-assessment",
+              "path": "/docs/module-4-vla/assessments/vla-assessment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/autonomous-execution/capstone-project",
+              "path": "/docs/module-4-vla/autonomous-execution/capstone-project",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/autonomous-execution/exercises",
+              "path": "/docs/module-4-vla/autonomous-execution/exercises",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/autonomous-execution/task-execution",
+              "path": "/docs/module-4-vla/autonomous-execution/task-execution",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/capstone-project",
+              "path": "/docs/module-4-vla/capstone-project",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/cognitive-planning",
+              "path": "/docs/module-4-vla/cognitive-planning",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/cognitive-planning/exercises",
+              "path": "/docs/module-4-vla/cognitive-planning/exercises",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/cognitive-planning/planning-algorithms",
+              "path": "/docs/module-4-vla/cognitive-planning/planning-algorithms",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/cognitive-planning/ros2-conversion",
+              "path": "/docs/module-4-vla/cognitive-planning/ros2-conversion",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/demo-guide",
+              "path": "/docs/module-4-vla/demo-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/exercises",
+              "path": "/docs/module-4-vla/exercises",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/intro",
+              "path": "/docs/module-4-vla/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/quickstart",
+              "path": "/docs/module-4-vla/quickstart",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/task-execution",
+              "path": "/docs/module-4-vla/task-execution",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/voice-to-action",
+              "path": "/docs/module-4-vla/voice-to-action",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/voice-to-action/audio-processing",
+              "path": "/docs/module-4-vla/voice-to-action/audio-processing",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/voice-to-action/exercises",
+              "path": "/docs/module-4-vla/voice-to-action/exercises",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4-vla/voice-to-action/whisper-setup",
+              "path": "/docs/module-4-vla/voice-to-action/whisper-setup",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/assessments/",
+                "label": "Assessments Overview"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

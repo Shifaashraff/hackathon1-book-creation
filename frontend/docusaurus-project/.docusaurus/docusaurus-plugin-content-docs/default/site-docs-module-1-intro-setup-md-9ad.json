@@ -1,0 +1,27 @@
+{
+  "id": "module-1-intro/setup",
+  "title": "Module 1: Isaac Sim Setup",
+  "description": "This module introduces you to NVIDIA Isaac Sim, a powerful robotics simulation environment. You'll learn how to set up your development environment and create your first simulated robot.",
+  "source": "@site/docs/module-1-intro/setup.md",
+  "sourceDirName": "module-1-intro",
+  "slug": "/module-1-intro/setup",
+  "permalink": "/docs/module-1-intro/setup",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-1-intro/setup.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Isaac AI Robot Brain Curriculum",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "Module 1: Isaac Sim Basics",
+    "permalink": "/docs/module-1-intro/basics"
+  }
+}

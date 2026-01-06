@@ -1,0 +1,24 @@
+{
+  "id": "module-4-vla/autonomous-execution/capstone-project",
+  "title": "Capstone Project: Autonomous Humanoid Task Execution",
+  "description": "Overview",
+  "source": "@site/docs/module-4-vla/autonomous-execution/capstone-project.md",
+  "sourceDirName": "module-4-vla/autonomous-execution",
+  "slug": "/module-4-vla/autonomous-execution/capstone-project",
+  "permalink": "/docs/module-4-vla/autonomous-execution/capstone-project",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-4-vla/autonomous-execution/capstone-project.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "VLA Module Assessment",
+    "permalink": "/docs/module-4-vla/assessments/vla-assessment"
+  },
+  "next": {
+    "title": "Autonomous Execution Exercises",
+    "permalink": "/docs/module-4-vla/autonomous-execution/exercises"
+  }
+}

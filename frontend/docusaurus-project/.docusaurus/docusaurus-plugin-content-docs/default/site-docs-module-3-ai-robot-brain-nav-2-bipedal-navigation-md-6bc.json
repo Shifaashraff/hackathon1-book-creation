@@ -1,0 +1,24 @@
+{
+  "id": "module-3-ai-robot-brain/nav2/bipedal-navigation",
+  "title": "Bipedal Navigation Guide for Humanoid Robots",
+  "description": "This guide covers implementing navigation behaviors specifically tailored for bipedal humanoid movement using Nav2.",
+  "source": "@site/docs/module-3-ai-robot-brain/nav2/bipedal-navigation.md",
+  "sourceDirName": "module-3-ai-robot-brain/nav2",
+  "slug": "/module-3-ai-robot-brain/nav2/bipedal-navigation",
+  "permalink": "/docs/module-3-ai-robot-brain/nav2/bipedal-navigation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3-ai-robot-brain/nav2/bipedal-navigation.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Nav2: Path Planning for Bipedal Humanoid Movement",
+    "permalink": "/docs/module-3-ai-robot-brain/nav2/"
+  },
+  "next": {
+    "title": "Nav2 Exercises for Bipedal Humanoid Navigation",
+    "permalink": "/docs/module-3-ai-robot-brain/nav2/exercises"
+  }
+}

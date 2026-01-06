@@ -1,0 +1,24 @@
+{
+  "id": "module-3-ai-robot-brain/isaac-ros/index",
+  "title": "Isaac ROS: VSLAM and Perception Pipelines",
+  "description": "Welcome to the Isaac ROS section of the AI-Robot Brain curriculum. This module focuses on implementing visual SLAM (VSLAM) and perception pipelines using Isaac ROS to enable the robot to understand its environment and navigate intelligently.",
+  "source": "@site/docs/module-3-ai-robot-brain/isaac-ros/index.md",
+  "sourceDirName": "module-3-ai-robot-brain/isaac-ros",
+  "slug": "/module-3-ai-robot-brain/isaac-ros/",
+  "permalink": "/docs/module-3-ai-robot-brain/isaac-ros/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3-ai-robot-brain/isaac-ros/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Isaac AI Robot Brain - Deliverables",
+    "permalink": "/docs/module-3-ai-robot-brain/deliverables"
+  },
+  "next": {
+    "title": "AI Navigation Guide for Isaac ROS",
+    "permalink": "/docs/module-3-ai-robot-brain/isaac-ros/ai-navigation"
+  }
+}

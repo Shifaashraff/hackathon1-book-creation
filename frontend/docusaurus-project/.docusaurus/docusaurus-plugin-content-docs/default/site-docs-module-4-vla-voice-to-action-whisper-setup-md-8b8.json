@@ -1,0 +1,20 @@
+{
+  "id": "module-4-vla/voice-to-action/whisper-setup",
+  "title": "Whisper Setup Guide",
+  "description": "Overview",
+  "source": "@site/docs/module-4-vla/voice-to-action/whisper-setup.md",
+  "sourceDirName": "module-4-vla/voice-to-action",
+  "slug": "/module-4-vla/voice-to-action/whisper-setup",
+  "permalink": "/docs/module-4-vla/voice-to-action/whisper-setup",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-4-vla/voice-to-action/whisper-setup.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Voice-to-Action Exercises",
+    "permalink": "/docs/module-4-vla/voice-to-action/exercises"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "module-4-vla/cognitive-planning/ros2-conversion",
+  "title": "ROS 2 Conversion Guide",
+  "description": "Overview",
+  "source": "@site/docs/module-4-vla/cognitive-planning/ros2-conversion.md",
+  "sourceDirName": "module-4-vla/cognitive-planning",
+  "slug": "/module-4-vla/cognitive-planning/ros2-conversion",
+  "permalink": "/docs/module-4-vla/cognitive-planning/ros2-conversion",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-4-vla/cognitive-planning/ros2-conversion.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Planning Algorithms Guide",
+    "permalink": "/docs/module-4-vla/cognitive-planning/planning-algorithms"
+  },
+  "next": {
+    "title": "Demonstration Guide: VLA System Capabilities",
+    "permalink": "/docs/module-4-vla/demo-guide"
+  }
+}

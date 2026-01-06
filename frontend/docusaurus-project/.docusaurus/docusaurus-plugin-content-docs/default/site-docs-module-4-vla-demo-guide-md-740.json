@@ -1,0 +1,24 @@
+{
+  "id": "module-4-vla/demo-guide",
+  "title": "Demonstration Guide: VLA System Capabilities",
+  "description": "Overview",
+  "source": "@site/docs/module-4-vla/demo-guide.md",
+  "sourceDirName": "module-4-vla",
+  "slug": "/module-4-vla/demo-guide",
+  "permalink": "/docs/module-4-vla/demo-guide",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-4-vla/demo-guide.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "ROS 2 Conversion Guide",
+    "permalink": "/docs/module-4-vla/cognitive-planning/ros2-conversion"
+  },
+  "next": {
+    "title": "VLA Module Quickstart Guide",
+    "permalink": "/docs/module-4-vla/quickstart"
+  }
+}

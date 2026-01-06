@@ -1,0 +1,27 @@
+{
+  "id": "module-2-ros-basics/ros-fundamentals",
+  "title": "Module 2: ROS 2 Fundamentals",
+  "description": "This module introduces you to Robot Operating System (ROS 2), the middleware framework for robotics applications. You'll learn how to create nodes, topics, services, and actions.",
+  "source": "@site/docs/module-2-ros-basics/ros-fundamentals.md",
+  "sourceDirName": "module-2-ros-basics",
+  "slug": "/module-2-ros-basics/ros-fundamentals",
+  "permalink": "/docs/module-2-ros-basics/ros-fundamentals",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-2-ros-basics/ros-fundamentals.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Module 1: Exercises",
+    "permalink": "/docs/module-1-intro/exercises"
+  },
+  "next": {
+    "title": "Module 2: ROS 2 Communication Patterns",
+    "permalink": "/docs/module-2-ros-basics/communication"
+  }
+}

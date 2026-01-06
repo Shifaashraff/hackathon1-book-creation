@@ -1,0 +1,24 @@
+{
+  "id": "module-3-ai-robot-brain/nav2/obstacle-avoidance",
+  "title": "Obstacle Avoidance Guide for Bipedal Humanoid Navigation",
+  "description": "This guide covers implementing obstacle avoidance specifically tailored for bipedal humanoid movement using Nav2 and Isaac ROS perception integration.",
+  "source": "@site/docs/module-3-ai-robot-brain/nav2/obstacle-avoidance.md",
+  "sourceDirName": "module-3-ai-robot-brain/nav2",
+  "slug": "/module-3-ai-robot-brain/nav2/obstacle-avoidance",
+  "permalink": "/docs/module-3-ai-robot-brain/nav2/obstacle-avoidance",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3-ai-robot-brain/nav2/obstacle-avoidance.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Nav2 Exercises for Bipedal Humanoid Navigation",
+    "permalink": "/docs/module-3-ai-robot-brain/nav2/exercises"
+  },
+  "next": {
+    "title": "Path Planning Guide for Bipedal Humanoid Navigation",
+    "permalink": "/docs/module-3-ai-robot-brain/nav2/path-planning"
+  }
+}
