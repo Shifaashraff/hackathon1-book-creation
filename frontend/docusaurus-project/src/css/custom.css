@@ -28,3 +28,44 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Custom styles for educational content */
+.lesson-objectives {
+  background-color: #f0f8ff;
+  border-left: 4px solid #007acc;
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+
+.lesson-objectives h3 {
+  margin-top: 0;
+}
+
+.code-example {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.important-note {
+  background-color: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.important-note::before {
+  content: "💡 Important: ";
+  font-weight: bold;
+}
+
+.diagram-container {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
