@@ -143,4 +143,4 @@ isaac_sim/logs/
 # Nav2
 nav2/logs/
 nav2/maps/*.yaml
-nav2/maps/*.pgm
+nav2/maps/*.pgmfrontend-book/
